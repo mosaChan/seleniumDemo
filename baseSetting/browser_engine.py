@@ -9,7 +9,7 @@ logger = Logger(logger="BrowserEngine").getlog()
 
 class BrowserEngine(object):
     #获得文件的父目录
-    dir = os.path.dirname(os.path.abspath('.'))
+    #dir = os.path.dirname(os.path.abspath('.'))
 
     def __init__(self,driver):
         self.driver = driver
