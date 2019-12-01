@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import time
-import  os
+import  os.path
 import configparser
 from selenium import webdriver
 from baseSetting.logger import Logger
@@ -9,7 +9,7 @@ logger = Logger(logger="BrowserEngine").getlog()
 
 class BrowserEngine(object):
     #获得文件的父目录
-    #dir = os.path.dirname(os.path.abspath('.'))
+    dir = os.path.dirname(os.path.abspath('.'))
 
     def __init__(self,driver):
         self.driver = driver
@@ -19,7 +19,7 @@ class BrowserEngine(object):
         #configparser用来读取配置文件信息的包
         config = configparser.ConfigParser()
         #获取config.ini当前路径
-        file_path = os.path.dirname(os.path.abspath('.')+'/config/config.ini')
+        file_path = os.path.dirname(os.path.abspath('.'))+'/config/config.ini'
         config.read(file_path)
 
         browser = config.get("browserType","browserName")

@@ -1,0 +1,20 @@
+2019-11-28 15:37:47,171-BrowserEngine-INFO-You had select Chrome browser.
+2019-11-28 15:37:47,201-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2019-11-28 15:37:52,075-BrowserEngine-INFO-Starting Chrome browser.
+2019-11-28 15:37:53,208-BrowserEngine-INFO-Maximize the current window
+2019-11-28 15:37:54,741-BrowserEngine-INFO-Open url:https://www.baidu.com
+2019-11-28 15:37:54,744-BrowserEngine-INFO-Set implicitly wait 3 seconds.
+2019-11-28 15:37:55,788-BasePage-INFO-Had find the element '  ' successful 
+2019-11-28 15:37:55,997-BasePage-INFO-input selenium into inputbox
+2019-11-28 15:37:57,003-BasePage-INFO-Sleep for 1 seconds
+2019-11-28 15:37:57,043-BasePage-INFO-Had find the element '  ' successful 
+2019-11-28 15:37:57,138-BasePage-INFO-the element  was clicked.
+2019-11-28 15:37:58,140-BasePage-INFO-Sleep for 1 seconds
+2019-11-28 15:37:59,393-BasePage-INFO-Had find the element ' Selenium_百度百科 ' successful 
+2019-11-28 15:37:59,809-BasePage-INFO-Current element text is Selenium_百度百科
+2019-11-28 15:37:59,829-BasePage-INFO-Had find the element ' Selenium_百度百科 ' successful 
+2019-11-28 15:37:59,839-BaiduSearch-INFO-'selenium' != 'Selenium_百度百科'
+- selenium
++ Selenium_百度百科
+
+2019-11-28 15:37:59,849-BaiduSearch-INFO-Test failed

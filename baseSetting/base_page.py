@@ -4,13 +4,16 @@ import time
 import os.path
 from baseSetting.logger import Logger
 import sys
-import importlib
-importlib.reload(sys)
-from selenium import webdriver
+# coding=utf-8
+import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
+import os.path
+from baseSetting.logger import Logger
+import sys
+import importlib
+importlib.reload(sys)
 
 logger = Logger(logger="BasePage").getlog()
 
@@ -26,7 +29,7 @@ class BasePage(object):
 
     def find_element(self,selector):
         try:
-            element = self.find_element_by_xpath(selector)
+            element = self.driver.find_element_by_xpath(selector)
             logger.info("Had find the element \' %s \' successful " % element.text)
         except NoSuchElementException as e:
             logger.error("NoSuchElementException: %s" % e)
